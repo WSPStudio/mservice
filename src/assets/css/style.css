@@ -3494,11 +3494,11 @@ body:not(.no-scroll) .button[disabled]:focus-visible {
   }
 
   .features-wrapper {
-    gap: round(clamp(16px, 15.2px + .25vw, 20px), 1px)
+    gap: round(clamp(8px, 5.6px + .75vw, 20px), 1px)
   }
 
   .features__item {
-    padding-top: round(clamp(140px, 128px + 3.75vw, 200px), 1px)
+    padding-top: round(clamp(120px, 104px + 5vw, 200px), 1px)
   }
 
   .features__item {
@@ -3506,7 +3506,7 @@ body:not(.no-scroll) .button[disabled]:focus-visible {
   }
 
   .features__item {
-    padding-inline: round(clamp(20px, 16.8px + 1vw, 36px), 1px)
+    padding-inline: round(clamp(12px, 7.2px + 1.5vw, 36px), 1px)
   }
 
   .features__item {
@@ -4003,7 +4003,7 @@ body:not(.no-scroll) .button[disabled]:focus-visible {
   .benefit__item {
     display: grid;
     justify-items: start;
-    max-width: round(clamp(200px, 56.8232662192px + 44.7427293065vw, 400px), 1px)
+    max-width: round(clamp(180px, 22.5055928412px + 49.2170022371vw, 400px), 1px)
   }
 
   .solutions-wrapper {
@@ -4086,6 +4086,19 @@ body:not(.no-scroll) .button[disabled]:focus-visible {
     scroll-snap-align: start
   }
 
+  .features-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+  }
+
+  .features__item:last-child:nth-child(odd) {
+    grid-column: 1/-1
+  }
+
+  .features__item-title {
+    font-size: round(clamp(14px, 6.4705882353px + 2.3529411765vw, 20px), 1px)
+  }
+
   .for__item-title {
     line-height: 1.2
   }
@@ -4094,6 +4107,7 @@ body:not(.no-scroll) .button[disabled]:focus-visible {
     background: #bac6cf
   }
 
+  .callback__left,
   .callback__form {
     max-width: 100%
   }
@@ -4117,6 +4131,11 @@ body:not(.no-scroll) .button[disabled]:focus-visible {
 
   .solutions__item {
     grid-template-columns: 40% 1fr
+  }
+
+  .solutions__item-title {
+    -webkit-hyphens: auto;
+    hyphens: auto
   }
 }
 
