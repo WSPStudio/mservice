@@ -1,0 +1,41 @@
+$row-gap: 8px 
+$column-gap: 24
+$column-gap-mobile: 20
+
+.crumbs
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	+adap('column-gap', $column-gap, $column-gap-mobile)
+	row-gap: $row-gap
+	 
+	+adap('font-size', 16, 14)
+
+	li 
+		&:not(:last-child)
+			color: $active
+
+			@media (any-hover: hover)
+				&:hover
+					color: $active
+
+					&:before
+						color: $gray
+
+		&:last-child
+			pointer-events: none
+
+			a
+				cursor: default 
+
+		&:not(:last-child)
+			position: relative
+			
+			&:before
+				content: '/'
+
+				position: absolute
+				+adap('right', math.div($column-gap, -2), math.div($column-gap-mobile, -2))
+				top: 50%
+				translate: 50% -50%
+				color: $text

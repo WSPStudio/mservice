@@ -1,0 +1,432 @@
+.main	
+	padding-top: 28px
+
+	@media (min-width: 1200px)
+
+
+body 
+	line-height: 1.45
+
+	&.home
+		@media (max-width: 1199px)
+			padding-top: 0
+
+	@media (min-width: 1200px)
+		padding-top: 28px
+ 
+	&:not(.no-scroll)
+		.button
+			&[disabled]
+				cursor: not-allowed
+				background: #4f4a47
+
+				+hov
+					background: #4f4a47
+			
+
+
+.section
+	+adap('padding-block', math.div($section_gap, 2), 24)
+
+	&-small
+		+adap('padding-block', 40, 16)
+
+		&-top 
+			+adap('padding-top', math.div($section_gap, 3), 16)   
+
+		&-bottom 
+			+adap('padding-bottom', math.div($section_gap, 3), 16)
+
+	&-bottom
+		+adap('padding-bottom', math.div($section_gap, 2), 24)
+
+	&-top
+		+adap('padding-top', math.div($section_gap, 2), 24)
+
+	&-big
+		+adap('padding-block', 120, 24)
+
+	&-bg
+		+adap('margin-block', math.div($section_gap, 2), 24)
+		
+		background: $bg
+			
+		&+.section-bg
+			+adap('margin-top', math.div($section_gap*-1, 2), -24)
+
+	&__top 
+		margin-bottom: 20px
+
+
+
+
+.title 
+	+title
+
+	&-2
+		+title-2
+
+	&-3
+		+title-3
+
+	&-4
+		+title-4
+
+	
+.button 
+	position: relative
+
+	display: flex
+	justify-content: center
+	align-items: center
+	padding: em(12) em(32)
+	+adap('min-height', 64, 48)
+	
+	background: $active
+	color: #fff
+
+	+adap('border-radius', 40, 28)
+
+	line-height: 1
+	+adap('font-size', 18, 14)
+	font-weight: 500
+	white-space: nowrap
+
+	+hov
+		background: dark($active, 36%)
+
+	&-arrow 
+		justify-content: flex-start
+		+adap('padding-right', 64, 48, $add: 32)
+
+		&:after
+			content: ''
+
+			position: absolute
+			right: 0
+			top: 50%
+			translate: 0 -50%
+
+			+adap('width', 64, 48)
+			aspect-ratio: 1
+
+			background: #fff url("data:image/svg+xml,%3Csvg width='11' height='18' viewBox='0 0 11 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 2L8.50881 8.62778C8.91195 9.0383 8.88637 9.7035 8.45289 10.0818L2 15.714' stroke='%23641A2E' stroke-width='2.6' stroke-linecap='round' /%3E%3C/svg%3E") center / 20% no-repeat
+			border-radius: 50%
+
+	&_small 
+		+adap('min-height', 48, 40)
+		+adap('font-size', 16, 14)
+
+	&_border 
+		background: transparent
+		border: 2px solid $active
+		color: $text
+
+		+hov
+			background: $active
+			color: #fff
+
+
+.call 
+	display: flex
+	align-items: center
+	gap: 16px
+
+.social 
+	display: flex
+	align-items: center
+	gap: 16px
+
+	&__item 
+		display: flex
+		+t
+
+		+hov
+			scale: 1.1
+
+		svg 
+			max-width: 22px
+			max-height: 22px
+
+			&.telegram-icon 
+				fill: #0084ff
+
+			&.whatsapp-icon 
+				fill: #00b309
+
+
+
+
+
+@media (max-width: 430px)
+	.header-main,
+	.benefit__content,
+	.services__content,
+	.info__content,
+	.case__content,
+	.callback__content,
+	.about-wrapper
+		margin-inline: -12px
+
+
+
+
+
+
+
+
+.section-404 
+	&__content 
+		+adap('min-height', 690, 300)
+
+		background: url(../img/404/bg.webp) center top / cover no-repeat
+		+adap('border-radius', 30, 16)
+		overflow: hidden
+
+	&-wrapper
+		+adap('padding-top', 453, 180)
+		display: grid
+		justify-items: center
+		gap: 16px
+
+		text-align: center
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+

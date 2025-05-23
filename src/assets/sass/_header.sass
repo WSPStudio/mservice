@@ -1,0 +1,305 @@
+
+.header
+	position: sticky 
+	left: 0
+	top: 0
+	z-index: 10
+
+	display: flex
+	align-items: center
+	justify-content: space-between
+	width: 100%
+	padding-block: 12px
+
+	will-change: transform
+	background: #fff
+	transition: opacity .4s, padding-block .4s, min-height .4s
+
+	.container 
+		width: 100%
+
+	&-wrapper
+		display: grid
+		grid-template-columns: auto 1fr 
+		+adap('gap', 60, -20)
+		align-items: center
+		width: 100%
+
+	&__top 
+		display: flex
+		align-items: center
+		justify-content: space-between
+		gap: 20px
+
+		@media (min-width: 1200px)
+			+adap('margin-bottom', 16, 12)
+			+adap('padding-bottom', 16, 12)
+
+			border-bottom: 1px solid #4f4a47
+
+	&__logo
+		img 
+			+adap('width', 150, minusPercent(30, 150))
+			+adap('height', 80, minusPercent(30, 80))
+
+	&__right 
+		display: flex
+		align-items: center
+		+adap('gap', 120, -40)
+
+
+	&__location,
+	&__email,
+	&__tel
+		display: flex
+		align-items: center
+		gap: 10px
+
+	&__location
+		+adap('font-size', 16, 14)
+		font-weight: 600
+		+underline
+
+		svg 
+			width: 15px
+			height: 20px
+
+			fill: $active
+
+	&__email,
+	&__tel
+		+adap('font-size', 18, 16)
+		line-height: 1
+		font-weight: 600
+
+		svg 
+			+adap('max-width', 24, 20)
+			+adap('max-height', 24, 20)
+
+			fill: $active
+
+
+
+	&__menu 
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+		justify-content: space-between
+		gap: 16px
+
+		font-weight: 600
+		+adap('font-size', 16, 14)
+
+		&>li>a
+			+hov
+				color: $active
+
+
+	@media (max-width: #{$burgerMedia+px})
+		$padding-top: 40
+		$padding-bottom: 40
+		$padding-x: 20
+		$mobile-bg: #fff
+
+		&__mobile 
+			position: fixed
+			right: -100vw
+			top: 0
+			z-index: 5
+					
+			display: grid 
+			grid-template-columns: 100%
+			justify-items: start
+			align-content: start
+			gap: 20px
+			width: min(500px, 101vw)
+			height: calc(100dvh - #{var(--headerFixedHeight)} + px)
+			padding: #{$padding-top+px} #{$padding-x+px} #{$padding-bottom+px}
+					
+			background: $mobile-bg
+					
+			opacity: 0
+			transition: right .3s, opacity .3s
+			+scrollbar(100vh, $scrollBarWidth: 4, $padding: 0) 
+
+			&.active
+				right: 0px
+				opacity: 1
+
+		&__nav 
+			width: 100%
+
+		&__menu
+			display: grid
+			grid-template-columns: 100%
+			gap: 20px  
+			width: 100%	
+
+		&__right 
+			display: contents
+
+		&__top 
+			justify-content: flex-end
+			+adap('gap', 40, 16, $burgerMedia)
+
+
+
+				
+.header-main 
+	&__content 
+		position: relative
+		z-index: 1
+		display: grid
+		align-content: end
+		justify-items: start
+		+adap('min-height', 684, 300)
+		+adap('padding-inline', 65, 16)
+		+adap('padding-block', 65, 24)
+
+		+adap('border-radius', 30, 16)
+		overflow: hidden
+
+		color: #fff
+
+		&:after
+			content: ''
+			+abs 
+			background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), linear-gradient(108.36deg, rgba(0, 0, 0, 0) 43.17%, rgba(0, 0, 0, 0.4) 87.27%)
+			pointer-events: none
+
+	&__bg 
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		z-index: -1
+		pointer-events: none
+
+		img 
+			width: 100%
+			height: 100%
+			object-fit: cover
+
+	&__title 
+		+adap('margin-bottom', 28, 20)
+
+		+beb
+		+adap('font-size', 88, 32)
+		text-transform: uppercase
+		line-height: normal
+	
+	&__list
+		display: flex
+		flex-wrap: wrap
+		+adap('column-gap', 74, 20)
+		row-gap: 16px 
+		+adap('margin-bottom', 54, 29)
+
+		li 
+			display: flex
+			align-items: center
+			+adap('gap', 16, 12)
+			+adap('font-size', 24, 20)
+
+			img 
+				+adap('flex-basis', 28, 20)
+
+
+
+
+
+				
+
+
+
+
+
+
+
+
+
+
+				
+
+
+
+
+
+
+
+
+
+
+				
+
+
+
+
+
+
+
+
+
+
+				
+
+
+
+
+
+
+
+
+
+
+				
+
+
+
+
+
+
+
+
+
+
+				
+
+
+
+
+				
+
+
+
+
+
+
+
+
+
+
+				
+
+
+
+
+
+
+
+
+
+
+				
+
+
+
+
+
+
+
+
+
+
+				

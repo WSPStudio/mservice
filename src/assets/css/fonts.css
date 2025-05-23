@@ -1,0 +1,48 @@
+
+@font-face {
+	font-family: "";
+	src: url(../fonts/.woff2);
+	font-weight: 400;
+	font-style: normal;
+	font-display: block;
+}  
+
+@font-face {
+	font-family: "BebasNeue";
+	src: url(../fonts/BebasNeue-Bold.woff2);
+	font-weight: 700;
+	font-style: normal;
+	font-display: block;
+}  
+
+@font-face {
+	font-family: "Roboto";
+	src: url(../fonts/Roboto-Medium.woff2);
+	font-weight: 500;
+	font-style: normal;
+	font-display: block;
+}  
+
+@font-face {
+	font-family: "Roboto";
+	src: url(../fonts/Roboto-Regular.woff2);
+	font-weight: 400;
+	font-style: normal;
+	font-display: block;
+}  
+
+@font-face {
+	font-family: "Roboto";
+	src: url(../fonts/Roboto-SemiBold.woff2);
+	font-weight: 600;
+	font-style: normal;
+	font-display: block;
+}  
+
+@font-face {
+	font-family: "lg";
+	src: url(../fonts/lg.woff2);
+	font-weight: 400;
+	font-style: normal;
+	font-display: block;
+}  

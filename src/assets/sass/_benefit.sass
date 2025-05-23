@@ -1,0 +1,226 @@
+.benefit
+	&__content
+		position: relative
+		+adap('padding-block', 88, 20)
+
+		+adap('min-height', 546, 400)
+		+adap('border-radius', 30, 16)
+		overflow: hidden
+
+		@media (min-width: 576px)
+			background: url(../img/benefit/bg.webp) center / cover no-repeat 
+
+		@media (max-width: 575px)
+			background: #bac6cf
+
+	&__title 
+		@media (min-width: 1200px)
+			text-align: center
+
+		span 
+			display: inline-block
+			+adap('width', 175, 140)
+
+	&__item 
+		z-index: 2
+
+		display: flex
+		align-items: center
+		+adap('gap', 24, 12)
+		width: 100%
+		max-width: max(percent(402, 1732), 350px)
+		+adap('padding-block', 28, 20)
+		+adap('padding-inline', 28, 16)
+
+		background: #fff
+		border-radius: 16px
+
+
+		@media (min-width: 1200px)
+			position: absolute
+			animation: up 1.8s infinite ease-in-out alternate
+
+			@keyframes up 
+				0% 
+					translate: 0 0
+
+				to 
+					translate: 0 -20px
+		
+			&:nth-child(1)
+				+adap('left', 127, -80, 1 , $min: true)
+				bottom: 154px
+				animation-delay: 0s
+			
+			&:nth-child(2)
+				+adap('left', 591, 200, 1 , $min: true)
+				bottom: 46px
+				max-width: percent(501, 1732)
+
+				animation-delay: .6s
+			
+			&:nth-child(3)
+				+adap('right', 168, -180, 1 , $min: true)
+				top: 186px
+				animation-delay: 1.2s
+
+
+		&-number 
+			+beb
+			text-transform: uppercase
+			color: $active
+			+adap('font-size', 88, -24, 1 , $min: true)
+			white-space: nowrap
+			line-height: .9
+			margin-bottom: -8px
+
+		&-title 
+			+adap('font-size', 20, 14)
+			line-height: normal
+
+	&__img 
+		position: absolute
+
+		bottom: 0
+		z-index: 1
+		+adap('height', 526, 400, 1 , $min: true)
+		max-height: 100%
+
+		img
+			object-position: bottom
+			height: 100%
+
+		@media (min-width: 1200px)
+			left: 47.5%
+			translate: -50% 0
+
+
+
+	@media (max-width: 1199px)
+		&__content 
+			+adap('padding-inline', 60, 16, 1199)
+
+		&__title 
+			margin-bottom: 20px
+		
+		&__img 
+			right: 0
+			+adap('max-width', 591, 200, 1199)
+
+		&-wrapper
+			display: grid
+			gap: 20px
+
+		&__item 
+			position: relative
+			+adap('max-width', 500, 250, 1199)
+
+			&-number 
+				flex-grow: 0
+				flex-shrink: 0
+				+adap('flex-basis', 80, 60, 1199)
+				
+				+adap('font-size', 48, 24, 1199)
+				text-align: center
+
+	@media (max-width: 767px)
+		&__item 
+			display: grid
+			justify-items: start
+
+			+adap('max-width', 400, 200, 767)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

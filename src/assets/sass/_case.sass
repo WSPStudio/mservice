@@ -1,0 +1,168 @@
+.case
+	&__content 
+		+adap('padding-block', 80, 24)
+		+adap('padding-inline', 72, 16)
+
+		background: #cfd6dc
+		+adap('border-radius', 30, 16)
+
+	&-wrapper
+		display: grid
+		grid-template-columns: repeat(4, 1fr)
+		+adap('gap', 20, 16)
+
+	&__item 
+		display: grid
+		grid-template-rows: auto 1fr 
+		+adap('border-radius', 30, 16)
+		overflow: hidden
+
+		background: #fff
+
+		+hov
+			.case__item-title 
+				color: $active
+
+		&-img 
+			display: flex
+			aspect-ratio: 381/214	
+			+adap('border-radius', 30, 16)
+			overflow: hidden
+
+			picture 
+				width: 100%
+
+			img 
+				width: 100%
+				height: 100%
+				object-fit: cover
+
+		&-content 
+			display: grid
+			+adap('gap', 20, 16)
+			align-content: start
+			+adap('padding-block', 24, 16)
+			+adap('padding-inline', 32, 16)
+
+		&-title 
+			max-width: 90%
+			font-weight: 600
+			+adap('font-size', 24, 20)
+			line-height: 1.2
+
+		&-text 
+			max-width: 90%
+			line-height: 1.3
+			color: #4f4946
+			+adap('font-size', 20, 16)
+
+
+	@media (max-width: 1400px)
+		&-wrapper
+			grid-template-columns: repeat(2, 1fr)
+
+	@media (max-width: 575px)
+		&-wrapper
+			grid-template-columns: 100%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

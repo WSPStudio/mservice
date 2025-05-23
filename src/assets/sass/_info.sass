@@ -1,0 +1,198 @@
+.info
+	&__content  
+		+adap('padding-block', 80, 24)
+		+adap('padding-inline', 109, -310, 1 , $min: true)
+
+		+adap('border-radius', 30, 16)
+
+		@media (min-width: 992px)
+			background: url(../img/info/bg.webp) center / cover no-repeat 
+
+		@media (max-width: 991px)
+			background: #bac6cf
+
+
+	&-wrapper
+		position: relative
+		z-index: 3
+
+		display: flex
+		flex-wrap: wrap
+		+adap('gap', 20, 8, 1 , $min: true)
+
+	&__item 
+		display: flex
+		flex-direction: column
+		max-width: 240px
+		min-width: 168px
+		+adap('min-width', 168, 100)
+		+adap('padding-top', 28, 20)
+		padding-bottom: 20px
+		+adap('padding-inline', 28, -12, 1 , $min: true)
+
+		border-radius: 16px
+		background: #fff
+
+		&-number 
+			+beb
+			+adap('font-size', 91, 18, 1 , $min: true)
+			line-height: .8
+			text-transform: uppercase
+			color: #641a2e
+			white-space: nowrap
+
+		&-title 
+			+adap('margin-top', 1, 8)
+			+adap('font-size', 20, 6, 1 , $min: true)
+			line-height: 1.2
+
+		&-icon 
+			margin-bottom: 12px
+			svg
+				+adap('width', 62, 36)
+				+adap('height', 62, 36)
+
+		&-text 
+			margin-top: auto
+			font-weight: 500
+			line-height: 1
+			+adap('font-size', 18, 16)
+
+		&-callback 
+			display: grid
+			justify-items: start
+			background: #641a2e
+
+			color: #fff
+
+			svg 
+				fill: #fff
+
+
+	@media (max-width: 1600px)
+		&__content 
+			+adap('padding-inline', 40, 16, 1600)
+
+		&-wrapper
+			display: grid
+			grid-template-columns: repeat(4, 1fr)
+
+		&__item 
+			max-width: none
+			min-width: auto
+			+adap('padding-inline', 24, 12, 1600)
+
+			&-number 
+				+adap('font-size', 80, 48, 1600)
+
+			&-title 
+				+adap('font-size', 18, 16, 1600)
+
+				br 
+					display: none
+
+
+	@media (max-width: 991px)
+		&-wrapper
+			grid-template-columns: repeat(3, 1fr)
+
+	@media (max-width: 575px)
+		&-wrapper
+			grid-template-columns: repeat(2, 1fr)
+
+		&__item 
+			&-callback 
+				grid-column: 1/-1
+
+			&-title 
+				hyphens: auto
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

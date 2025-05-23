@@ -1,0 +1,263 @@
+.footer 
+	&__top 
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+		gap: 20px
+
+		&-wrapper
+			+adap('padding-block', 40, 28)
+
+			background: #211f1e
+			color: #fff
+
+
+	&__logo 
+		img 
+			+adap('width', 208, minusPercent(60, 208))
+			+adap('height', 117, minusPercent(60, 117))
+
+	&__menu 
+		+adap('max-width', 400, 360)
+		display: grid
+		grid-template-columns: repeat(2, auto)
+		+adap('row-gap', 20, 16)
+		+adap('column-gap', 100, -60, 1 , $min: true)
+
+		+adap('font-size', 20, 16)
+		line-height: 1.2
+
+		@media (max-width: 1400px)
+			grid-template-columns: 100%
+ 
+		&>li
+			&:last-child
+				&:nth-child(odd)
+					@media (min-width: 1401px)
+						grid-column: 2
+
+			&>a 
+				+hov
+					color: $active
+
+	&__col 
+		display: grid
+		+adap('gap', 24, 16)
+		align-items: start
+		+adap('max-width', 260, 240)
+
+	&__address 
+		display: flex
+		align-items: center
+		gap: 10px
+
+		+adap('font-size', 20, 16)
+		line-height: 1.35
+
+		svg 
+			flex: 0 0 15px
+			width: 15px
+			height: 20px
+
+			fill: $active
+
+	&__contacts 
+		display: grid
+		gap: 20px
+
+	&__tel,
+	&__email 
+		display: flex
+		align-items: center
+		gap: 10px
+
+		+adap('font-size', 20, 16)
+		font-weight: 600
+
+		svg 
+			max-width: 24px
+			max-height: 24px
+
+			fill: $active
+
+	&__info 
+		display: grid
+		gap: 12px 40px
+
+
+	&__bottom 
+		display: flex
+		align-items: center
+		justify-content: space-between
+		gap: 12px
+		flex-wrap: wrap
+
+		+adap('font-size', 16, 14)
+
+		a 
+			+hov
+				color: $active
+
+		&-wrapper
+			padding: 10px
+
+			background: #0e0d0d
+			color: #fff
+
+
+	@media (max-width: 1199px)
+		&__menu 
+			display: none
+
+	@media (max-width: 991px)
+		&__top 
+			display: grid
+			grid-template-columns: repeat(3, auto)
+
+		&__info 
+			display: flex
+			flex-wrap: wrap
+			white-space: nowrap
+			grid-column: 1/-1
+ 
+		&__bottom
+			display: grid
+			grid-template-columns: repeat(2, 1fr)
+
+			&>* 
+				&:nth-child(2n)
+					@media (min-width: 576px)
+						text-align: right
+
+	@media (max-width: 767px)
+		&__top 
+			grid-template-columns: 100%
+
+		&__col
+			order: 2 
+		
+		&__info 
+			display: grid
+			grid-template-columns: repeat(2, auto)
+			order: 3
+			max-width: 300px
+
+	@media (max-width: 575px)
+		&__logo 
+			img
+				width: 120px
+				height: auto
+
+		&__bottom
+			grid-template-columns: 100%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

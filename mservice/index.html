@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="ru" class="scrollbar-auto">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon  -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.webp">
+  <link rel="icon" type="image/webp" sizes="32x32" href="assets/img/favicon/favicon.svg">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Шрифты -->
+  <link rel="preload" href="assets/css/fonts.css" as="style" onload="this.rel='stylesheet'">
+
+  <!-- Общие стили -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Индексация -->
+  <meta name="robots" content="noindex, nofollow">
+  <title>М-Сервис</title>
+
+</head>
+
+<body id="home" class="home">
+  <div class="wrapper">
+
+    <header class="header" data-fixed>
+      <div class="container">
+        <div class="header-wrapper">
+          <a href="/mservice/#home" class="logo header__logo">
+            <img src="assets/img/logo.svg" width="150" height="80" alt="">
+          </a>
+          <div class="header__content">
+            <div class="header__top">
+              <div class="header__location" data-da=".header__mobile,1199,1">
+                <svg class="location-icon">
+                  <use xlink:href="assets/img/sprite.svg#location"></use>
+                </svg>
+                <span>Москва</span>
+              </div>
+              <div class="header__right">
+                <a href="mailto:info@mservice.su" class="hover-active email header__email" data-da=".header__mobile,991,2">
+                  <svg class="email-icon">
+                    <use xlink:href="assets/img/sprite.svg#email"></use>
+                  </svg>
+                  <span>info@mservice.su</span>
+                </a>
+                <div class="call header__call" data-da=".header__mobile,767,3">
+                  <a href="tel:+78123130605" class="hover-active tel header__tel">
+                    <svg class="phone-icon">
+                      <use xlink:href="assets/img/sprite.svg#phone"></use>
+                    </svg>
+                    <span>+7 (812) 313-06-05</span>
+                  </a>
+
+                  <div class="social header__social">
+                    <a href="https://wa.me/+79789999999" class="social__item" target="_blank">
+                      <svg class="whatsapp-icon">
+                        <use xlink:href="assets/img/sprite.svg#whatsapp"></use>
+                      </svg>
+                    </a>
+                    <a href="https://t.me/+70000000000" class="social__item" target="_blank">
+                      <svg class="telegram-icon">
+                        <use xlink:href="assets/img/sprite.svg#telegram"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <button class="button button_small" type="button" data-modal="popup-call">Отправить заявку</button>
+                <button class="menu-link">
+                  <span class="menu-lines"></span>
+                </button>
+              </div>
+            </div>
+            <div class="header__mobile">
+              <nav class="nav header__nav">
+                <ul class="menu header__menu">
+                  <li><a href="#features">Преимущества</a></li>
+                  <li><a href="#about">О компании</a></li>
+                  <li><a href="#services">Услуги</a></li>
+                  <li><a href="#solutions">IT-решения</a></li>
+                  <li><a href="#client">Наши клиенты</a></li>
+                  <li><a href="#case">Наши кейсы</a></li>
+                  <li><a href="#contact">Контакты</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+
+      <!-- Баннер -->
+      <div class="header-main">
+        <div class="container">
+          <div class="header-main__content">
+
+            <picture class="header-main__bg">
+              <source srcset="assets/img/header/bg_mobile.webp" media="(max-width: 575px)">
+              <img src="assets/img/header/bg.webp" width="1736" height="683" alt="" loading="lazy" decoding="async">
+            </picture>
+
+            <div class="header-main-wrapper">
+              <h1 class="header-main__title">Комплексное управление <br> объектами недвижимости</h1>
+              <ul class="header-main__list">
+                <li>
+                  <img src="assets/img/header/1.svg" alt="" loading="lazy" decoding="async">
+                  <span>Современные IT-решения</span>
+                </li>
+                <li>
+                  <img src="assets/img/header/2.svg" alt="" loading="lazy" decoding="async">
+                  <span>Мониторинг 24/7</span>
+                </li>
+              </ul>
+              <button class="button button-arrow header-main__button" type="button" data-modal="popup-call">Получить консультацию</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Преимущества -->
+      <div id="features" class="section features">
+        <div class="container">
+          <div class="features-wrapper">
+            <div class="wow fadeIn hover-translate features__item" data-wow-delay='.2s'>
+              <img src="assets/img/features/1.webp" class="features__item-img" width="330" height="200" alt="" loading="lazy" decoding="async">
+              <div class="title-3 features__item-title">Автоматизация и цифровизация ключевых процессов</div>
+            </div>
+            <div class="wow fadeIn hover-translate features__item" data-wow-delay='.25s'>
+              <img src="assets/img/features/2.webp" class="features__item-img" width="330" height="200" alt="" loading="lazy" decoding="async">
+              <div class="title-3 features__item-title">Высокая скорость реагирования на неполадки</div>
+            </div>
+            <div class="wow fadeIn hover-translate features__item" data-wow-delay='.3s'>
+              <img src="assets/img/features/3.webp" class="features__item-img" width="330" height="200" alt="" loading="lazy" decoding="async">
+              <div class="title-3 features__item-title">Предиктивное обслуживание оборудования</div>
+            </div>
+            <div class="wow fadeIn hover-translate features__item" data-wow-delay='.35s'>
+              <img src="assets/img/features/4.webp" class="features__item-img" width="330" height="200" alt="" loading="lazy" decoding="async">
+              <div class="title-3 features__item-title">Удаленный контроль систем в реальном времени</div>
+            </div>
+            <div class="wow fadeIn hover-translate features__item" data-wow-delay='.4s'>
+              <img src="assets/img/features/5.webp" class="features__item-img" width="330" height="200" alt="" loading="lazy" decoding="async">
+              <div class="title-3 features__item-title">Быстрое внедрение комплексных решений</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ваша выгода -->
+      <div class="section benefit">
+        <div class="container">
+          <div class="benefit__content">
+            <div class="title-2 benefit__title">
+              ваши
+              <span class="hide-lg"></span>
+              выгоды
+            </div>
+            <div class="benefit-wrapper">
+              <div class="benefit__item">
+                <div class="benefit__item-number">-<span data-digits-counter111>20</span>%</div>
+                <div class="benefit__item-title">снижение затрат
+                  на эксплуатацию и обслуживание оборудования</div>
+              </div>
+              <div class="benefit__item">
+                <div class="benefit__item-number">+<span data-digits-counter111>38</span>%</div>
+                <div class="benefit__item-title">рост производительности оборудования за счет снижения числа отказов</div>
+              </div>
+              <div class="benefit__item">
+                <div class="benefit__item-number"><span data-digits-counter111>100</span>%</div>
+                <div class="benefit__item-title">прозрачность
+                  и управляемость процессов</div>
+              </div>
+            </div>
+
+            <picture class="benefit__img">
+              <source srcset="assets/img/benefit/1_mobile.webp" media="(max-width: 575px)">
+              <img src="assets/img/benefit/1.webp" width="591" height="526" alt="" loading="lazy" decoding="async">
+            </picture>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Для кого -->
+      <div class="section-big for">
+        <div class="container">
+          <div class="section__top">
+            <div class="title-2">Для кого</div>
+          </div>
+          <div class="for-wrapper">
+            <div class="wow fadeIn hover-scale for__item" data-wow-delay='.2s'>
+
+              <picture class="for__item-img">
+                <source srcset="assets/img/for/1_mobile.webp" media="(max-width: 575px)">
+                <img src="assets/img/for/1.webp" width="418" height="528" alt="" loading="lazy" decoding="async">
+              </picture>
+
+              <div class="for__item-title">Спортивные объекты</div>
+            </div>
+            <div class="wow fadeIn hover-scale for__item" data-wow-delay='.25s'>
+
+              <picture class="for__item-img">
+                <source srcset="assets/img/for/2_mobile.webp" media="(max-width: 575px)">
+                <img src="assets/img/for/2.webp" width="856" height="254" alt="" loading="lazy" decoding="async">
+              </picture>
+
+              <div class="for__item-title">Заправочные станции</div>
+            </div>
+            <div class="wow fadeIn hover-scale for__item" data-wow-delay='.3s'>
+
+              <picture class="for__item-img">
+                <source srcset="assets/img/for/4_mobile.webp" media="(max-width: 575px)">
+                <img src="assets/img/for/4.webp" width="418" height="528" alt="" loading="lazy" decoding="async">
+              </picture>
+
+              <div class="for__item-title">Коммерческие <br> объекты</div>
+            </div>
+            <div class="wow fadeIn hover-scale for__item" data-wow-delay='.35s'>
+
+              <picture class="for__item-img">
+                <source srcset="assets/img/for/3_mobile.webp" media="(max-width: 575px)">
+                <img src="assets/img/for/3.webp" width="856" height="254" alt="" loading="lazy" decoding="async">
+              </picture>
+
+              <div class="for__item-title">Промышленность</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Наши услуги -->
+      <div id="services" class="section services">
+        <div class="container">
+          <div class="services__content">
+            <div class="section__top">
+              <div class="title-2">Наши услуги</div>
+            </div>
+            <div class="services-wrapper">
+              <div class="wow fadeIn hover-scale services__item" data-wow-delay='.2s'>
+                <div class="services__item-img">
+
+                  <picture>
+                    <source srcset="assets/img/services/1_mobile.webp" media="(max-width: 575px)">
+                    <img src="assets/img/services/1.webp" width="381" height="214" alt="" loading="lazy" decoding="async">
+                  </picture>
+
+                </div>
+                <div class="services__item-content">
+                  <div class="title-3 services__item-title">Строительно-монтажные и пуско-наладочные работы</div>
+                  <ul class="services__item-list">
+                    <li>Установка и запуск систем и оборудования</li>
+                    <li>Монтаж и обслуживание элементов внешнего оформления</li>
+                    <li>Ремонт зданий, сооружений, покрытий площадок, тротуаров, проездов, ограждений</li>
+                  </ul>
+                  <button class="button button_border" type="button" data-modal="popup-call">Получить расчет</button>
+                </div>
+              </div>
+              <div class="wow fadeIn hover-scale services__item" data-wow-delay='.25s'>
+                <div class="services__item-img">
+
+                  <picture>
+                    <source srcset="assets/img/services/2_mobile.webp" media="(max-width: 575px)">
+                    <img src="assets/img/services/2.webp" width="381" height="214" alt="" loading="lazy" decoding="async">
+                  </picture>
+
+                </div>
+                <div class="services__item-content">
+                  <div class="title-3 services__item-title">Контроль состояния и техническое обслуживание систем и оборудования</div>
+                  <ul class="services__item-list">
+                    <li>Электроснабжение, слаботочные системы и КИПиА</li>
+                    <li>Отопление, водоснабжение и канализация</li>
+                    <li>Вентиляция и системы кондиционирования</li>
+                    <li>Противопожарные и охранные системы</li>
+                    <li>Инженерные сети АЗС / АГЗС</li>
+                    <li>Холодильное и торговое оборудование</li>
+                  </ul>
+                  <button class="button button_border" type="button" data-modal="popup-call">Получить расчет</button>
+                </div>
+              </div>
+              <div class="wow fadeIn hover-scale services__item" data-wow-delay='.3s'>
+                <div class="services__item-img">
+
+                  <picture>
+                    <source srcset="assets/img/services/3_mobile.webp" media="(max-width: 575px)">
+                    <img src="assets/img/services/3.webp" width="381" height="214" alt="" loading="lazy" decoding="async">
+                  </picture>
+
+                </div>
+                <div class="services__item-content">
+                  <div class="title-3 services__item-title">Сервисное обслуживание (АХО)</div>
+                  <ul class="services__item-list">
+                    <li>Сервисное обслуживание (АХО)</li>
+                    <li>Аутсорсинг обслуживающего и административного персонала</li>
+                    <li>Клининг на объекте и уборка прилегающих территорий</li>
+                    <li>Управление охраной</li>
+                    <li>Организация вывоза мусора и утилизации отходов</li>
+                    <li>Обеспечение и контроль состояния СИЗ</li>
+                    <li>Закупки в части АХО, контроль над ТМЦ, инвентаризация</li>
+                    <li>Кейтеринг, организация переезда</li>
+                    <li>Курьерская служба</li>
+                    <li>Колл-центр</li>
+                  </ul>
+                  <button class="button button_border" type="button" data-modal="popup-call">Получить расчет</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Наши IT-решения -->
+      <div id="solutions" class="section solutions">
+        <div class="container">
+          <div class="section__top">
+            <div class="title-2">Наши IT-решения</div>
+          </div>
+          <div class="solutions-wrapper">
+            <div class="wow fadeIn hover-translate solutions__item" data-wow-delay='.2s'>
+              <div class="solutions__item-img">
+                <img src="assets/img/solutions/1.webp" width="273" height="326" alt="" loading="lazy" decoding="async">
+              </div>
+              <div class="solutions__item-content">
+                <div class="title-3 solutions__item-title">Сервис-Деск</div>
+                <div class="solutions__item-text">Автоматизированная система управления сервисной службой из личного кабинета</div>
+                <button class="button button_border" type="button" data-modal="popup-call">Узнать больше</button>
+              </div>
+            </div>
+            <div class="wow fadeIn hover-translate solutions__item" data-wow-delay='.25s'>
+              <div class="solutions__item-img">
+                <img src="assets/img/solutions/2.webp" width="273" height="326" alt="" loading="lazy" decoding="async">
+              </div>
+              <div class="solutions__item-content">
+                <div class="title-3 solutions__item-title">Мониторинговый центр</div>
+                <div class="solutions__item-text">Удаленный контроль систем и технического состояния оборудования</div>
+                <button class="button button_border" type="button" data-modal="popup-call">Узнать больше</button>
+              </div>
+            </div>
+            <div class="wow fadeIn hover-translate solutions__item" data-wow-delay='.3s'>
+              <div class="solutions__item-img">
+                <img src="assets/img/solutions/3.webp" width="273" height="326" alt="" loading="lazy" decoding="async">
+              </div>
+              <div class="solutions__item-content">
+                <div class="title-3 solutions__item-title">Мобильные приложения</div>
+                <div class="solutions__item-text">Для клиента, посетителей и сотрудников служб</div>
+                <button class="button button_border" type="button" data-modal="popup-call">Узнать больше</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- О компании	-->
+      <div id="about" class="section about">
+        <div class="container">
+          <div class="about-wrapper">
+            <picture class="about__bg">
+              <source srcset="assets/img/default.webp" media="(max-width: 991px)">
+              <source srcset="assets/img/about/bg.webp" media="(min-width: 992px)">
+              <img src="assets/img/about/bg.webp" alt="" loading="lazy">
+            </picture>
+            <div class="about__right">
+              <div class="section__top">
+                <div class="title-2 about__title">О компании</div>
+              </div>
+              <div class="about__text">
+                <p>М-СЕРВИС — это многопрофильный сервис по обслуживанию недвижимости для обеспечения бесперебойной работы всех систем.</p>
+
+                <p>В нашей команде работают профессионалы с большим опытом организации сервисного обслуживания объектов в режиме 24/7 под любой запрос и тип недвижимости. Основная задача — повышение эффективности и прозрачности процессов эксплуатации, в том числе за счёт цифровизации и внедрения современных ИТ-решений. Это даёт возможность обеспечить бесперебойную работу оборудования и функционирование объекта при снижении затрат на их содержание.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- М-СЕРВИС в цифрах -->
+      <div class="section info">
+        <div class="container">
+          <div class="info__content">
+            <div class="section__top">
+              <div class="title-2">М-СЕРВИС в цифрах</div>
+            </div>
+            <div class="info-wrapper">
+              <div class="wow fadeIn hover-translate info__item" data-wow-delay='.2s'>
+                <div class="info__item-number"><span data-digits-counter111>12</span></div>
+                <div class="info__item-title">филиалов <br> в РФ и СНГ</div>
+              </div>
+              <div class="wow fadeIn hover-translate info__item" data-wow-delay='.25s'>
+                <div class="info__item-number"><span data-digits-counter111>15</span></div>
+                <div class="info__item-title">лет <br> опыта</div>
+              </div>
+              <div class="wow fadeIn hover-translate info__item" data-wow-delay='.3s'>
+                <div class="info__item-number"><span data-digits-counter111>1 800</span></div>
+                <div class="info__item-title">объектов <br> на обслуживании</div>
+              </div>
+              <div class="wow fadeIn hover-translate info__item" data-wow-delay='.35s'>
+                <div class="info__item-number"><span data-digits-counter111>96</span>%</div>
+                <div class="info__item-title">уровень <br> сервиса</div>
+              </div>
+              <div class="wow fadeIn hover-translate info__item" data-wow-delay='.4s'>
+                <div class="info__item-number"><span data-digits-counter111>500</span>+</div>
+                <div class="info__item-title">партнеров-поставщиков МТР</div>
+              </div>
+              <div class="wow fadeIn hover-translate info__item" data-wow-delay='.45s'>
+                <div class="info__item-number"><span data-digits-counter111>620</span></div>
+                <div class="info__item-title">единиц <br> спецтранспорта</div>
+              </div>
+              <button class="wow fadeIn hover-translate info__item info__item-callback" type="button" data-modal="popup-call" data-wow-delay='.5s'>
+                <div class="info__item-icon">
+                  <svg class="message-icon">
+                    <use xlink:href="assets/img/sprite.svg#message"></use>
+                  </svg>
+                </div>
+                <div class="info__item-text">Обсудить проект</div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Наши клиенты -->
+      <div id="client" class="section client">
+        <div class="container">
+          <div class="section__top">
+            <div class="title-2">Наши клиенты</div>
+          </div>
+          <div class="client-wrapper" data-scrolling>
+            <div class="wow fadeIn hover-translate client__item" data-wow-delay='.2s'>
+              <img src="assets/img/client/1.svg" class="client__item-logo" width="236" height="58" alt="" loading="lazy" decoding="async">
+            </div>
+            <div class="wow fadeIn hover-translate client__item" data-wow-delay='.25s'>
+              <img src="assets/img/client/2.svg" class="client__item-logo" width="245" height="64" alt="" loading="lazy" decoding="async">
+            </div>
+            <div class="wow fadeIn hover-translate client__item" data-wow-delay='.3s'>
+              <img src="assets/img/client/3.svg" class="client__item-logo" width="204" height="54" alt="" loading="lazy" decoding="async">
+            </div>
+            <div class="wow fadeIn hover-translate client__item" data-wow-delay='.35s'>
+              <img src="assets/img/client/1.svg" class="client__item-logo" width="236" height="58" alt="" loading="lazy" decoding="async">
+            </div>
+            <div class="wow fadeIn hover-translate client__item" data-wow-delay='.4s'>
+              <img src="assets/img/client/2.svg" class="client__item-logo" width="245" height="64" alt="" loading="lazy" decoding="async">
+            </div>
+            <div class="wow fadeIn hover-translate client__item" data-wow-delay='.45s'>
+              <img src="assets/img/client/3.svg" class="client__item-logo" width="204" height="54" alt="" loading="lazy" decoding="async">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Наши кейсы -->
+      <div id="case" class="section case">
+        <div class="container">
+          <div class="case__content">
+            <div class="section__top">
+              <div class="title-2">Наши кейсы</div>
+            </div>
+            <div class="case-wrapper">
+              <div class="wow fadeIn hover-scale case__item" data-wow-delay='.2s'>
+                <div class="case__item-img">
+
+                  <picture>
+                    <source srcset="assets/img/case/1_mobile.webp" media="(max-width: 575px)">
+                    <img src="assets/img/case/1.webp" width="381" height="214" alt="" loading="lazy" decoding="async">
+                  </picture>
+
+                </div>
+                <div class="case__item-content">
+                  <div class="case__item-title">Здесь название этого кейса в две строчки</div>
+                  <div class="case__item-text">Текстовое описание этого кейса в несколько строчек будет расположено тут</div>
+                </div>
+              </div>
+              <div class="wow fadeIn hover-scale case__item" data-wow-delay='.25s'>
+                <div class="case__item-img">
+
+                  <picture>
+                    <source srcset="assets/img/case/2_mobile.webp" media="(max-width: 575px)">
+                    <img src="assets/img/case/2.webp" width="381" height="214" alt="" loading="lazy" decoding="async">
+                  </picture>
+
+                </div>
+                <div class="case__item-content">
+                  <div class="case__item-title">Здесь название этого кейса в две строчки</div>
+                  <div class="case__item-text">Текстовое описание этого кейса в несколько строчек будет расположено тут</div>
+                </div>
+              </div>
+              <div class="wow fadeIn hover-scale case__item" data-wow-delay='.3s'>
+                <div class="case__item-img">
+
+                  <picture>
+                    <source srcset="assets/img/case/1_mobile.webp" media="(max-width: 575px)">
+                    <img src="assets/img/case/1.webp" width="381" height="214" alt="" loading="lazy" decoding="async">
+                  </picture>
+
+                </div>
+                <div class="case__item-content">
+                  <div class="case__item-title">Здесь название этого кейса в две строчки</div>
+                  <div class="case__item-text">Текстовое описание этого кейса в несколько строчек будет расположено тут</div>
+                </div>
+              </div>
+              <div class="wow fadeIn hover-scale case__item" data-wow-delay='.35s'>
+                <div class="case__item-img">
+
+                  <picture>
+                    <source srcset="assets/img/case/2_mobile.webp" media="(max-width: 575px)">
+                    <img src="assets/img/case/2.webp" width="381" height="214" alt="" loading="lazy" decoding="async">
+                  </picture>
+
+                </div>
+                <div class="case__item-content">
+                  <div class="case__item-title">Здесь название этого кейса в две строчки</div>
+                  <div class="case__item-text">Текстовое описание этого кейса в несколько строчек будет расположено тут</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Оставьте заявку -->
+      <div class="section callback">
+        <div class="container">
+          <div class="callback__content">
+            <div class="section__top">
+              <div class="title-2">Оставьте заявку</div>
+            </div>
+            <div class="form callback__form">
+              <form>
+                <div class="input-wrapper">
+                  <input class="input" type="text" name="name" placeholder="Ваше имя">
+                  <input class="input" type="tel" name="phone" placeholder="Ваш телефон" required>
+                  <button class="button submit">Отправить</button>
+                </div>
+                <label class="checkbox">
+                  <input class="checkbox__input" type="checkbox" required checked>
+                  <span class="checkbox__text">Я соглашаюсь с <a href="#" target="_blank" class="hover-active">пользовательским соглашением</a> и <a href="#" target="_blank" class="hover-active">политикой конфиденциальности</a></span>
+                </label>
+              </form>
+            </div>
+            <picture class="callback__img">
+              <source srcset="assets/img/default.webp" media="(max-width: 767px)">
+              <source srcset="assets/img/callback/1.webp" media="(min-width: 768px)">
+              <img src="assets/img/callback/1.webp" width="892" height="509" alt="" loading="lazy" decoding="async">
+            </picture>
+          </div>
+        </div>
+      </div>
+
+      <!-- Как с нами связаться -->
+      <div id="contact" class="section-big contact">
+        <div class="container">
+          <div class="section-small contact-wrapper">
+            <div class="contact__left">
+              <div class="title-2">Как с нами связаться</div>
+              <div class="contact__items">
+                <div class="contact__item">
+                  <svg class="location-icon">
+                    <use xlink:href="assets/img/sprite.svg#location"></use>
+                  </svg>
+                  <span>Москва, ул Московская, дом 9в, офис 15 <br>
+                    Пн-Пт, с 9:00 до 18:00</span>
+                </div>
+                <div class="contact__item">
+                  <svg class="time-icon">
+                    <use xlink:href="assets/img/sprite.svg#time"></use>
+                  </svg>
+                  <span>Пн-Пт, с 9:00 до 18:00</span>
+                </div>
+                <div class="call contact__call">
+                  <a href="tel:+78123130605" class="hover-active tel contact__tel">
+                    <svg class="phone-icon">
+                      <use xlink:href="assets/img/sprite.svg#phone"></use>
+                    </svg>
+                    <span>+7 (812) 313-06-05</span>
+                  </a>
+
+                  <div class="social contact__social">
+                    <a href="https://wa.me/+79789999999" class="social__item" target="_blank">
+                      <svg class="whatsapp-icon">
+                        <use xlink:href="assets/img/sprite.svg#whatsapp"></use>
+                      </svg>
+                    </a>
+                    <a href="https://t.me/+70000000000" class="social__item" target="_blank">
+                      <svg class="telegram-icon">
+                        <use xlink:href="assets/img/sprite.svg#telegram"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <a href="mailto:info@mservice.su" class="hover-active email contact__email contact__item">
+                  <svg class="email-icon">
+                    <use xlink:href="assets/img/sprite.svg#email"></use>
+                  </svg>
+                  <span>info@mservice.su</span>
+                </a>
+              </div>
+            </div>
+            <div class="map-wrapper contact__map">
+              <div class="loader loader-default"></div>
+              <div id="map" class="map"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer__top-wrapper">
+        <div class="container">
+          <div class="footer__top">
+            <a href=" /mservice/#home" class="logo footer__logo">
+              <img src="assets/img/logo-white.svg" width="208" height="117" alt="">
+            </a>
+            <ul class="menu footer__menu">
+              <li><a href="#features">Преимущества</a></li>
+              <li><a href="#solutions">IT-решения</a></li>
+              <li><a href="#about">О компании</a></li>
+              <li><a href="#client">Наши клиенты</a></li>
+              <li><a href="#services">Услуги</a></li>
+              <li><a href="#case">Наши кейсы</a></li>
+              <li><a href="#contact">Контакты</a></li>
+            </ul>
+            <div class="footer__col">
+              <div class="footer__address">
+                <svg class="location-icon">
+                  <use xlink:href="assets/img/sprite.svg#location"></use>
+                </svg>
+                <span>Москва, ул Московская, дом 9в, офис 15</span>
+              </div>
+              <button class="button button_small" type="button" data-modal="popup-call">Отправить заявку</button>
+            </div>
+            <div class="footer__contacts">
+              <a href="mailto:info@mservice.su" class="hover-active email footer__email">
+                <svg class="email-icon">
+                  <use xlink:href="assets/img/sprite.svg#email"></use>
+                </svg>
+                <span>info@mservice.su</span>
+              </a>
+              <div class="call footer__call">
+                <a href="tel:+78123130605" class="hover-active tel footer__tel">
+                  <svg class="phone-icon">
+                    <use xlink:href="assets/img/sprite.svg#phone"></use>
+                  </svg>
+                  <span>+7 (812) 313-06-05</span>
+                </a>
+
+                <div class="social footer__social">
+                  <a href="https://wa.me/+79789999999" class="social__item" target="_blank">
+                    <svg class="whatsapp-icon">
+                      <use xlink:href="assets/img/sprite.svg#whatsapp"></use>
+                    </svg>
+                  </a>
+                  <a href="https://t.me/+70000000000" class="social__item" target="_blank">
+                    <svg class="telegram-icon">
+                      <use xlink:href="assets/img/sprite.svg#telegram"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="footer__info">
+              <p>ООО “М-СЕРВИС”</p>
+              <p>ОГРН: 00000000000000</p>
+              <p>ИНН: 0000000000</p>
+              <p>КПП: 0000000000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom-wrapper">
+        <div class="container">
+          <div class="footer__bottom">
+            <span>Copyright ©2022 – 2025 М-Сервис</span>
+            <a href="sitemap.html" target="_blank">Карта сайта</a>
+            <a href="text.html" target="_blank">Политика конфиденциальности</a>
+            <a href="text.html" target="_blank">Пользовательское соглашение</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Модалки -->
+
+  <div class="popups">
+    <!-- Заказать звонок -->
+    <div class="popup popup-call" id="popup-call">
+      <div class="popup__dialog">
+        <div class="popup__content">
+          <button class="popup__close" type="button" data-popup-close>
+            <svg class="close">
+              <use xlink:href="assets/img/sprite.svg#close"></use>
+            </svg>
+          </button>
+          <div class="form popup__form">
+            <div class="title-2 popup__title">Оставьте заявку</div>
+            <form>
+              <input type="hidden" name="info" class="popup-info">
+              <div class="input-wrapper">
+                <input class="input" type="text" name="name" placeholder="Ваше имя">
+                <input class="input" type="tel" name="phone" placeholder="Ваш телефон" required>
+                <button class="button submit">Отправить</button>
+              </div>
+              <label class="checkbox">
+                <input class="checkbox__input" type="checkbox" checked required>
+                <span class="checkbox__text">Я соглашаюсь с <a href="text.html" class="underline" target="_blank">Пользовательским соглашением</a> и <a href="text.html" class="underline" target="_blank">Политикой конфиденциальности</a></span>
+              </label>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Окно благодарности -->
+    <div class="popup popup-thank" id="popup-thank">
+      <div class="popup__dialog">
+        <div class="popup__content">
+          <button class="popup__close" data-popup-close>
+            <svg class="close">
+              <use xlink:href="assets/img/sprite.svg#close"></use>
+            </svg>
+          </button>
+          <div class="popup__title">Спасибо за заявку!</div>
+          <img src="assets/img/icons/check.svg" width="80" alt="img">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Библиотеки -->
+  <link rel="preload" href="assets/css/vendor.css" as="style" onload="this.rel='stylesheet'; this.media='all'; this.onload=null;">
+
+  <script src="assets/js/vendor.js" defer></script>
+
+  <!-- Общие скрипты -->
+  <script src="assets/js/script.js" type="module" defer></script>
+
+  <!-- Worker -->
+  <script>
+    if (location.hostname !== 'localhost' && 'serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/worker.js').catch(console.error);
+    }
+  </script>
+
+  <!-- Карта -->
+  <script>
+    function initMaps(id, address) {
+      if (document.querySelector(`#${id}`)) {
+        let locationX = parseFloat(address[0][0].split(',')[0]);
+        let locationY = parseFloat(address[0][0].split(',')[1]);
+        myMap = new ymaps.Map(id, {
+          center: [locationX, locationY],
+          zoom: 14,
+          controls: ['largeMapDefaultSet'],
+        }, {
+          searchControlProvider: 'yandex#search'
+        });
+        for (let i = 0; i < address.length; i++) {
+          myPlacemarkTemp = new ymaps.Placemark(address[i][0].split(','), {
+            balloonContent: address[i][1],
+          }, {
+            iconLayout: 'default#imageWithContent',
+            iconImageHref: "assets/img/icons/location.svg",
+            iconImageSize: [39, 50],
+            iconImageOffset: [-15, -44],
+          });
+          myMap.geoObjects.add(myPlacemarkTemp);
+        }
+        if (address.length > 1) {
+          // Автомасштаб меток
+          myMap.setBounds(myMap.geoObjects.getBounds(), {
+            checkZoomRange: true,
+            zoomMargin: 30
+          });
+        }
+        // Запретить скролл мышью
+        myMap.behaviors.disable('scrollZoom')
+        // Удаление прелоадера
+        layer = myMap.layers.get(0).get(0);
+        waitForTilesLoad(layer).then(function() {
+          document.querySelectorAll('.is-active').forEach(element => {
+            if (element.parentElement.querySelector(`#${id}`)) {
+              element.classList.remove('is-active')
+            }
+          });
+        });
+      }
+    }
+
+    function init() {
+      initMaps('map', [
+        [
+          '55.669762, 37.411795',
+          'Москва, ул Московская, дом 9в, офис 15',
+        ],
+      ])
+    }
+  </script>
+
+</body>
+
+</html>

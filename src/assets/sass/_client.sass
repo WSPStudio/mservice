@@ -1,0 +1,141 @@
+.client
+	&-wrapper
+		display: grid
+		grid-template-columns: repeat(6, 1fr)
+		+adap('gap', 20, 16)
+
+	&__item 
+		display: flex
+		align-items: center
+		justify-content: center
+		+adap('min-height', 132, 110)
+
+		background: #e1e7ed
+		border-radius: 14px
+
+		&-logo 
+			max-width: 90%
+			max-height: 80%
+
+	@media (max-width: 1199px)
+		&-wrapper
+			grid-template-columns: repeat(3, 1fr)
+
+	@media (max-width: 575px)
+		&-wrapper
+			display: flex
+
+			scroll-snap-type: x mandatory
+			+scrollbar-x(100%, $scrollBarHeight: 4, $padding: 5) 
+			
+		&__item 
+			min-width: 240px
+			scroll-snap-align: start
+	
+
+
+
+[data-scrolling].dragging
+	scroll-snap-type: none !important
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
