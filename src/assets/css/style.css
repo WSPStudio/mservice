@@ -732,7 +732,8 @@ body:not(.no-scroll) .button[disabled]:focus-visible {
 }
 
 .popup__title {
-  margin-bottom: 8px
+  margin-bottom: 8px;
+  text-align: center
 }
 
 .popup__form form {
@@ -1649,7 +1650,6 @@ body:not(.no-scroll) .button[disabled]:focus-visible {
   font-family: "BebasNeue";
   font-weight: 700;
   line-height: 1.05;
-  overflow-y: auto;
   -webkit-hyphens: auto;
   hyphens: auto
 }
@@ -1737,8 +1737,7 @@ body:not(.no-scroll) .button[disabled]:focus-visible {
 .info-wrapper {
   position: relative;
   z-index: 3;
-  display: flex;
-  flex-wrap: wrap
+  display: flex
 }
 
 .info__item {
