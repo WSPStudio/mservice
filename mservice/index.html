@@ -115,7 +115,7 @@
                   <span>Мониторинг 24/7</span>
                 </li>
               </ul>
-              <button class="button button-arrow header-main__button" type="button" data-modal="popup-call">Получить консультацию</button>
+              <button class="button button-arrow header-main__button" type="button" data-modal="popup-consultation">Получить консультацию</button>
             </div>
           </div>
         </div>
@@ -255,7 +255,7 @@
                     <li>Монтаж и обслуживание элементов внешнего оформления</li>
                     <li>Ремонт зданий, сооружений, покрытий площадок, тротуаров, проездов, ограждений</li>
                   </ul>
-                  <button class="button button_border" type="button" data-modal="popup-call">Получить расчет</button>
+                  <button class="button button_border" type="button" data-modal="popup-calc">Получить расчет</button>
                 </div>
               </div>
               <div class="wow fadeIn hover-scale services__item" data-wow-delay='.25s'>
@@ -277,7 +277,7 @@
                     <li>Инженерные сети АЗС / АГЗС</li>
                     <li>Холодильное и торговое оборудование</li>
                   </ul>
-                  <button class="button button_border" type="button" data-modal="popup-call">Получить расчет</button>
+                  <button class="button button_border" type="button" data-modal="popup-calc">Получить расчет</button>
                 </div>
               </div>
               <div class="wow fadeIn hover-scale services__item" data-wow-delay='.3s'>
@@ -303,7 +303,7 @@
                     <li>Курьерская служба</li>
                     <li>Колл-центр</li>
                   </ul>
-                  <button class="button button_border" type="button" data-modal="popup-call">Получить расчет</button>
+                  <button class="button button_border" type="button" data-modal="popup-calc">Получить расчет</button>
                 </div>
               </div>
             </div>
@@ -698,6 +698,65 @@
           </button>
           <div class="form popup__form">
             <div class="title-2 popup__title">Оставьте заявку</div>
+            <div class="popup__subtitle">Оставьте свои контактные данные и мы свяжемся с вами в ближайшее время</div>
+            <form>
+              <input type="hidden" name="info" class="popup-info">
+              <div class="input-wrapper">
+                <input class="input" type="text" name="name" placeholder="Ваше имя" required>
+                <input class="input" type="tel" name="phone" placeholder="Ваш телефон" required>
+                <button class="button submit">Отправить</button>
+              </div>
+              <label class="checkbox">
+                <input class="checkbox__input" type="checkbox" checked required>
+                <span class="checkbox__text">Я соглашаюсь с <a href="text.html" class="underline" target="_blank">Пользовательским соглашением</a> и <a href="text.html" class="underline" target="_blank">Политикой конфиденциальности</a></span>
+              </label>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Получить расчет -->
+    <div class="popup popup-calc" id="popup-calc">
+      <div class="popup__dialog">
+        <div class="popup__content">
+          <button class="popup__close" type="button" data-popup-close>
+            <svg class="close">
+              <use xlink:href="assets/img/sprite.svg#close"></use>
+            </svg>
+          </button>
+          <div class="form popup__form">
+            <div class="title-2 popup__title">Получить расчет</div>
+            <div class="popup__subtitle">Оставьте свои контактные данные и мы свяжемся с вами в ближайшее время</div>
+            <form>
+              <input type="hidden" name="info" class="popup-info">
+              <div class="input-wrapper">
+                <input class="input" type="text" name="name" placeholder="Ваше имя" required>
+                <input class="input" type="tel" name="phone" placeholder="Ваш телефон" required>
+                <button class="button submit">Отправить</button>
+              </div>
+              <label class="checkbox">
+                <input class="checkbox__input" type="checkbox" checked required>
+                <span class="checkbox__text">Я соглашаюсь с <a href="text.html" class="underline" target="_blank">Пользовательским соглашением</a> и <a href="text.html" class="underline" target="_blank">Политикой конфиденциальности</a></span>
+              </label>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Получить консультацию -->
+    <div class="popup popup-consultation" id="popup-consultation">
+      <div class="popup__dialog">
+        <div class="popup__content">
+          <button class="popup__close" type="button" data-popup-close>
+            <svg class="close">
+              <use xlink:href="assets/img/sprite.svg#close"></use>
+            </svg>
+          </button>
+          <div class="form popup__form">
+            <div class="title-2 popup__title">Получить консультацию</div>
+            <div class="popup__subtitle">Оставьте свои контактные данные и мы свяжемся с вами в ближайшее время</div>
             <form>
               <input type="hidden" name="info" class="popup-info">
               <div class="input-wrapper">

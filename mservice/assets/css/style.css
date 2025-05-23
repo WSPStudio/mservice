@@ -736,6 +736,11 @@ body:not(.no-scroll) .button[disabled]:focus-visible {
   text-align: center
 }
 
+.popup__subtitle {
+  margin-inline: auto;
+  text-align: center
+}
+
 .popup__form form {
   display: grid;
   justify-content: center;
@@ -825,12 +830,7 @@ body:not(.no-scroll) .button[disabled]:focus-visible {
 }
 
 .header__location {
-  font-weight: 600;
-  text-decoration: underline;
-  -webkit-text-decoration-skip-ink: none;
-  text-decoration-skip-ink: none;
-  text-underline-offset: .1lh;
-  transition: all .4s
+  font-weight: 600
 }
 
 .header__location svg {
@@ -2284,6 +2284,18 @@ body:not(.no-scroll) .button[disabled]:focus-visible {
     border-radius: 30px
   }
 
+  .popup__subtitle {
+    max-width: 400px
+  }
+
+  .popup__subtitle {
+    margin-bottom: 20px
+  }
+
+  .popup__subtitle {
+    font-size: 20px
+  }
+
   .popup__form .input-wrapper {
     gap: 20px
   }
@@ -3097,6 +3109,18 @@ body:not(.no-scroll) .button[disabled]:focus-visible {
 
   .popup__content {
     border-radius: round(clamp(16px, 13.2px + .875vw, 30px), 1px)
+  }
+
+  .popup__subtitle {
+    max-width: round(clamp(320px, 304px + 5vw, 400px), 1px)
+  }
+
+  .popup__subtitle {
+    margin-bottom: round(clamp(16px, 15.2px + .25vw, 20px), 1px)
+  }
+
+  .popup__subtitle {
+    font-size: round(clamp(14px, 12.8px + .375vw, 20px), 1px)
   }
 
   .popup__form .input-wrapper {
