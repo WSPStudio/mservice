@@ -2872,6 +2872,10 @@ body:not(.no-scroll) .button[disabled]:focus-visible {
     column-gap: 100px
   }
 
+  .callback__left {
+    max-width: 480px
+  }
+
   .callback__form {
     max-width: 386px
   }
@@ -2916,6 +2920,10 @@ body:not(.no-scroll) .button[disabled]:focus-visible {
 @media (max-width:1920px) {
   .footer__menu {
     column-gap: calc(-60px + 160*(100vw - 320px)/1600)
+  }
+
+  .callback__left {
+    max-width: calc(300px + 180*(100vw - 320px)/1600)
   }
 
   .callback__form {
